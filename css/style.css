@@ -1,0 +1,239 @@
+﻿@charset "utf-8";
+
+/**************************************
+
+                通用格式
+
+**************************************/
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-size: initial;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapClear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    border: 0;
+}
+
+.wrapperMenuList {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #D4514B;
+    border-bottom-left-radius: 2vw;
+    padding: 1vw 2vw 1vw 5vw;
+    box-sizing: border-box;
+}
+
+.wrapperMenuList li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2vw 0 0;
+}
+
+.wrapperMenuList li svg {
+    color: #fff;
+    font-size: 3vw;
+}
+
+.wrapperFlexBg {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapperFlexBg .wrapperFlexLeft {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wrapperFlexBg .wrapperFlexRight {
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.addWorkBg {
+    display: flex;
+    width: 40vw;
+    margin: 4vw 0 0 0;
+}
+
+.addWorkBg .keyin {
+    flex: 1 1 2vw;
+    outline: none;
+    border: 1px solid #D4514B;
+    border-width: 1px 0 1px 0;
+    font-size: 1.6vw;
+    padding: 1.5vw 1vw 1.5vw 2vw;
+    box-sizing: border-box;
+}
+
+.addWorkBg .btnKeyin {
+    flex: 0 0 4.5vw;
+    border: 1px solid #D4514B;
+    border-width: 1px 1px 1px 1px;
+    border-top-right-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    font-size: 2.5vw;
+    color: #D4514B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workListBg {
+    width: 40vw;
+    margin: 3vw 0 0 0;
+}
+
+.workListBg .workList {}
+
+.workListBg .workList li {
+    background-color: #EBEBEB;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    padding: 2vw 2vw 2vw 2vw;
+    box-sizing: border-box;
+    margin: 0 0 1vw 0;
+}
+
+.workListBg .workList li .left {
+    flex: 1 1 80%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workListBg .workList li .left .head {
+    font-size: 2vw;
+    color: #9A9A9A;
+    font-weight: 900;
+}
+
+.workListBg .workList li .left .numBg {
+    display: flex;
+    display: none;
+}
+
+.workListBg .workList li .left .numBg .num {
+    margin: 0 0.8vw 0 0;
+    width: 2.8vw;
+}
+
+.workListBg .workList li .left .numBg .num img {
+    width: 100%;
+}
+
+.workListBg .workList li .right {
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workListBg .workList li .right .btnGo {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workListBg .workList li .right .btnGo img {
+    width: 30%;
+}
+
+.tomatoBg {
+    background: url(../images/tomato.svg) center center no-repeat;
+    background-size: 100% auto;
+    width: 48vw;
+    height: 48vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tomatoBg .tomato {
+    overflow: hidden;
+    margin: 10vw 0 0 0;
+    width: 99%;
+}
+
+.lengthList {
+    display: flex;
+    align-items: flex-end;
+    width: 87vw;
+    transform: translate(0.95vw, 0);
+}
+
+.lengthList li {
+    flex: 1 1 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lengthList li .heightSet {
+    background: #d85c56;
+    height: 1.5vw;
+    width: 0.3vw;
+}
+
+.lengthList li .heightSet.big {
+    height: 2.2vw;
+    width: 0.6vw;
+}
+
+.lengthList li .num {
+    font-size: 3.5vw;
+    color: #d85c56;
+    font-weight: 900;
+}
+
+.headStart {
+    position: absolute;
+    top: 33vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.headStart img {
+    transform: rotate(-90deg);
+}
